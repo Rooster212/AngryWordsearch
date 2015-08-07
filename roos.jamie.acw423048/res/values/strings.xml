@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wordsearch ACW</string>
+    <string name="hello_world">Hello World</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_unregister">Unregister</string>
+    <string name="testing_intent">Test Intent</string>
+    <string name="registerMenuButtonString">Register User</string>
+    <string name="viewscoresbuttonstring">Score Query Server</string>
+    <string name="change_password">Change Password</string>
+    <string name="retrieve_details">Retrieve Details</string>
+    <string name="storage_details">Puzzles</string>
+    <string name="todayPuzzleMainMenuButtonString">Play Today\'s Puzzle</string>
+    <string name="pastPuzzleMainMenuButtonString">Play Past Puzzle</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+	tools:context="roos.jamie.acw423048.MainActivity">
+	<item 
+	    android:id="@+id/action_unregister" 
+	    android:orderInCategory="100"
+		android:title="@string/action_unregister" 
+		app:showAsAction="never" 
+		android:visible="false"/>
+	<item 
+	    android:id="@+id/password_change" 
+	    android:orderInCategory="150"
+	    app:showAsAction="never"
+		android:title="@string/change_password" />
+	<item 
+	    android:id="@+id/retrieve_details" 
+	    android:orderInCategory="250"
+	    app:showAsAction="never"
+		android:title="@string/retrieve_details" />
+	<item 
+	    android:id="@+id/action_settings" 
+	    android:orderInCategory="1000"
+		android:title="@string/action_settings" 
+		app:showAsAction="never" />
+	
+</menu>

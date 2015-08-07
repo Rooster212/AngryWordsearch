@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+
+    <roos.jamie.acw423048.CustomView.PuzzleGridView
+        android:id="@+id/puzzleGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="12" >
+    </roos.jamie.acw423048.CustomView.PuzzleGridView>
+    <LinearLayout
+        android:id="@+id/puzzleBottomScreen"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ScrollView 
+            android:id="@+id/puzzleWordListScrollView"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1">
+		    <LinearLayout
+		        android:id="@+id/puzzleWordList"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical">
+		    </LinearLayout>
+	    </ScrollView>
+	    <LinearLayout
+	        android:id="@+id/puzzleButtonList"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical">
+	        <Button
+	            android:id="@+id/puzzleMenuButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:onClick="MenuButtonClicked"
+	            android:text="Menu">
+	        </Button>
+	        <Button
+	            android:id="@+id/puzzleSubmitButton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:onClick="SubmitButtonClicked"
+	            android:enabled="false"
+	            android:text="Submit Puzzle">
+	        </Button>
+	        <Button
+	            android:id="@+id/puzzlePopulateSolution"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:onClick="PopulateSolutionButtonClicked"
+	            android:enabled="false"
+	            android:text="Show Solution">
+	        </Button>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

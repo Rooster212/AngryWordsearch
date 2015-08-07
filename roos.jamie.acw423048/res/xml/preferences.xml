@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <PreferenceCategory android:title="User">
+		<EditTextPreference
+		    android:key="username"
+		    android:title="Username"
+		    android:persistent="true"
+		    />
+		<EditTextPreference
+		    android:key="first_name"
+		    android:title="First Name"
+		    android:persistent="true"/>
+		
+		<EditTextPreference
+		    android:key="last_name"
+		    android:title="Last Name"
+		    android:persistent="true" 
+		    />
+		<EditTextPreference
+		    android:key="password"
+		    android:title="Password"   
+		    android:inputType="textPassword"
+		    android:persistent="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Connection">
+	    <EditTextPreference
+	        android:key="server_url"
+	        android:title="Server URL"
+	        android:summary="URI for server connection"
+	        android:defaultValue="08309.net.dcs.hull.ac.uk"
+	        android:persistent="true"
+	        />
+    </PreferenceCategory>
+</PreferenceScreen>

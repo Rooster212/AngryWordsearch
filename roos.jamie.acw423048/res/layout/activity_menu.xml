@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<include 
+	    android:id="@+id/toolbar"
+	    layout="@layout/toolbar"/>
+	<ImageView
+	    android:id="@+id/homeImage"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/wordsearch"
+	    android:contentDescription="Angry Wordsearch Logo"/>
+    <Button
+        android:id="@+id/registerMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="RegisterMenuButtonClicked"
+        android:text="@string/registerMenuButtonString"
+        />
+    
+    <Button
+        android:id="@+id/viewScoresButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ViewScoresButtonClicked"
+        android:text="@string/viewscoresbuttonstring"
+        />
+
+    <Button
+        android:id="@+id/playTodayPuzzleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TodayPuzzleButtonClicked"
+        android:text="@string/todayPuzzleMainMenuButtonString" />
+    
+    <Button
+        android:id="@+id/playPastPuzzleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pastPuzzleMainMenuButtonString" />
+    <Button
+        android:id="@+id/viewStoredPuzzlesButton"
+        android:layout_width="match_parent"
+        android:onClick="ViewStoredPuzzlesButton"
+        android:layout_height="wrap_content"
+        android:text="View Stored Puzzles" />
+    
+</LinearLayout>
+</ScrollView>

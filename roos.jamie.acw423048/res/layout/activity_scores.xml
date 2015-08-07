@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<include 
+	    android:id="@+id/toolbar"
+	    layout="@layout/toolbar"/>
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/todaysScoreHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="center"
+        android:longClickable="false"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:text="Today&apos;s Score"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/todaysScoreHeader"
+        android:gravity="center"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/otherScoreHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scoreText"
+        android:gravity="center"
+        android:longClickable="false"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:text="Other Date Score"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/selectDateEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/otherScoreText"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="8dp"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/otherScoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/otherScoreHeader"
+        android:gravity="center"
+        android:longClickable="false"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:text=""
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/changeDateForScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/selectDateEditText"
+        android:gravity="center"
+        android:text="Select Date" />
+
+</RelativeLayout>
